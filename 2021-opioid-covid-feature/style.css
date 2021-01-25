@@ -154,6 +154,7 @@ div#title-logo div {
 @media (max-width: 1000px) {
   .author {
     font-size: 14px;
+    margin-bottom: 1em;
   }
 }
 .date {
@@ -171,8 +172,13 @@ div#title-logo div {
   margin-left: auto;
   margin-right: auto;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  .u-container {
+    padding-bottom: 0;
+  }
 }
 .u-container-intro {
   max-width: 700px;
@@ -314,6 +320,11 @@ div#title-logo div {
 .subhed {
   padding: 1.5em 0 1.5em 0;
 }
+@media (max-width: 1000px) {
+  .subhed {
+    padding: 0.5em 0 0.5em 0;
+  }
+}
 .name-title span {
   font-family: 'Mallory', Helvetica, Arial, sans-serif !important;
   font-weight: 700;
@@ -351,8 +362,9 @@ div#title-logo div {
 @media (max-width: 1000px) {
   .caption {
     padding-bottom: 0;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
   }
 }
 .caption p {
