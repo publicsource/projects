@@ -233,13 +233,14 @@ div#title-logo div {
   }
 }
 .u-container-text {
-  font-family: garamond-premier-pro, serif;
-  font-size: 22.5px;
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
   max-width: 700px;
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  color: #484848;
 }
 @media (max-width: 1000px) {
   .u-container-text {
@@ -277,17 +278,41 @@ div#title-logo div {
     margin-top: 1.5em;
   }
 }
-.u-container-text-color h2 {
+.u-container-pullquote {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  border-top: solid 15px #FFB440;
+  text-align: center;
+}
+.u-container-pullquote h3 {
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 1em 0 1em 0;
+}
+@media (max-width: 1000px) {
+  .u-container-pullquote h3 {
+    font-size: 1.4em;
+  }
+}
+.u-container-text h2 {
+  font-family: 'Mallory', Helvetica, Arial, sans-serif;
+  color: #232323;
+  text-align: center;
   font-size: 1.1em;
-  font-weight: 800;
+  font-weight: 700;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   max-width: 700px;
   line-height: 1.4;
 }
 @media (max-width: 1000px) {
-  .u-container-text-color h2 {
+  .u-container-text h2 {
     font-size: 0.975em;
     margin-top: 1.5em;
     margin-left: 20px;
@@ -349,27 +374,49 @@ div#title-logo div {
     padding-top: 0;
   }
 }
+.bug-img {
+  float: left;
+  padding: 10px 20px 10px 0;
+  max-width: 230px;
+}
+@media (max-width: 1000px) {
+  .bug-img {
+    max-width: 170px;
+  }
+}
+.series-description {
+  border-left: solid 15px #FFB440;
+  padding-left: 20px;
+  margin: 2em 0 2em 0;
+}
+.series-description p {
+  font-family: 'Mallory', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+}
+.series-description b {
+  font-size: 17px !important;
+  font-weight: bold;
+}
 .caption {
-  text-align: center;
-  font-family: garamond-premier-pro, "Times New Roman", Times, serif;
+  text-align: left;
+  max-width: 1000px;
 }
 @media (max-width: 1000px) {
   .caption {
     padding-bottom: 0;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 15px;
   }
 }
 .caption p {
-  font-family: 'Mallory', Helvetica, Arial, sans-serif;
-  font-size: 13.5px;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
   font-weight: 300;
   color: #787878;
 }
 @media (max-width: 1000px) {
   .caption p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .cta-box {
@@ -1466,7 +1513,7 @@ body {
   touch-action: manipulation;
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 img,
 svg {
