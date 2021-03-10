@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "sources": [
+    "node_modules/browser-pack-flat/_prelude",
+    "src/js/main.js",
+    "node_modules/browser-pack-flat/_postlude"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA;ACDA;;;;;;ACAA;AACA",
+  "file": "generated.js",
+  "sourceRoot": "",
+  "sourcesContent": [
+    "(function(){\n",
+    "// require(\"./lib/pym\");\n// require(\"./hamburger\");\n// require(\"./scrollama\");\n// require(\"./typeit\");\n// require(\"./tooltip\");\n// require(\"./expander\");\n",
+    "\n}());"
+  ]
+}
