@@ -335,6 +335,11 @@ div#title-logo div {
     font-size: 1.2em;
   }
 }
+.u-container-text b {
+  color: #010101;
+  font-size: 19px;
+  line-height: 1em;
+}
 .u-container-text a {
   color: #418cff !important;
   text-decoration: none;
