@@ -1303,7 +1303,7 @@ th {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: height 950ms ease-in-out, opacity 950ms ease-in;
+  transition: height 550ms ease-in, opacity 550ms ease-in;
 }
 #scrolly figure img.is-visible {
   display: block;
