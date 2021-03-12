@@ -21438,7 +21438,7 @@ _$tooltip_39;
 _$expander_35; // smooth scroll;
 
 
-const links = document.querySelectorAll(".item a");
+const links = document.querySelectorAll("#main-nav-links a");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
@@ -21452,14 +21452,7 @@ function clickHandler(e) {
     top: offsetTop,
     behavior: "smooth"
   });
-} // typeIt;
-
-
-new TypeIt("#quote1", {
-  strings: "This is my string!",
-  speed: 75,
-  loop: true
-}).go();
+}
 
 }());
 //# sourceMappingURL=app.js.map

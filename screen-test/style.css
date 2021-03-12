@@ -125,7 +125,7 @@ div#title-logo div {
   background-color: white;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 4em;
   text-align: center;
 }
@@ -261,7 +261,7 @@ div#title-logo div {
 .headline-text h1 {
   max-width: 450px;
   font-family: 'Crimson Text', serif;
-  font-size: 3em;
+  font-size: 3.2em;
   font-weight: 600;
   line-height: 1.1em;
   text-align: center;
@@ -297,7 +297,7 @@ div#title-logo div {
   display: grid;
   align-items: center;
   justify-content: center;
-  padding: 6em 10px 0 10px;
+  padding: 5em 10px 0 10px;
 }
 .headline-text-mobile h1 {
   max-width: 300px;
@@ -317,7 +317,7 @@ div#title-logo div {
   text-transform: uppercase;
   color: #010101 !important;
   font-family: 'PT Mono', monospace !important;
-  margin-bottom: 0;
+  margin-bottom: 5em;
 }
 .u-container-text {
   font-family: 'Crimson Text', serif;
@@ -391,7 +391,7 @@ div#title-logo div {
 }
 .caption p {
   font-family: garamond-premier-pro, "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 16px;
   color: grey;
 }
 @media (max-width: 1000px) {
@@ -1800,7 +1800,6 @@ th {
   justify-content: center;
   align-items: center;
   padding-bottom: 4em;
-  margin-top: 2em;
   font-family: mallory, sans-serif;
 }
 #footer span {
