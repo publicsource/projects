@@ -21435,24 +21435,7 @@ _$typeit_40;
 
 _$tooltip_39;
 
-_$expander_35; // smooth scroll;
-
-
-const links = document.querySelectorAll("#main-nav-links a");
-
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
-}
-
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
-}
+_$expander_35;
 
 }());
 //# sourceMappingURL=app.js.map

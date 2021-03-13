@@ -129,6 +129,12 @@ div#title-logo div {
   padding-bottom: 4em;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .u-container-white {
+    padding-top: 0;
+    padding-bottom: 0.5em;
+  }
+}
 .u-container-brown {
   background-color: #D8CFC3;
   margin-left: auto;
@@ -158,14 +164,15 @@ div#title-logo div {
 }
 .u-container-intro h1 {
   font-family: 'Crimson Text', serif;
-  font-size: 3.4em;
+  font-size: 3.2em;
   font-weight: 600;
   color: #010101;
   text-align: left;
+  line-height: 1.2em;
 }
 @media (max-width: 1000px) {
   .u-container-intro h1 {
-    font-size: 2.4em;
+    font-size: 30px;
     margin: 15px;
   }
 }
@@ -177,21 +184,22 @@ div#title-logo div {
 }
 @media (max-width: 1000px) {
   .u-container-intro h2 {
-    font-size: 2.4em;
+    font-size: 2em;
     margin: 15px;
   }
 }
 .u-container-intro h3 {
   font-family: 'Crimson Text', serif;
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 600;
-  color: #010101;
   text-align: left;
   padding-top: 0.25em;
+  line-height: 1.2em;
+  color: #010101;
 }
 @media (max-width: 1000px) {
   .u-container-intro h3 {
-    font-size: 2.4em;
+    font-size: 30px;
     margin: 15px;
   }
 }
@@ -219,10 +227,13 @@ div#title-logo div {
   }
 }
 .subhed {
-  font-size: 2.6em !important;
-  font-family: 'Mallory', Helvetica, Arial, sans-serif !important;
-  text-align: center;
-  text-transform: uppercase;
+  font-weight: 700 !important;
+  padding-top: 1em;
+}
+@media (max-width: 1000px) {
+  .subhed {
+    padding-top: 1em;
+  }
 }
 .author {
   font-family: 'Mallory', Helvetica, Arial, sans-serif !important;
@@ -321,7 +332,7 @@ div#title-logo div {
 }
 .u-container-text {
   font-family: 'Crimson Text', serif;
-  font-size: 22px;
+  font-size: 22.5px;
   max-width: 800px;
   margin-top: 2em;
   margin-left: auto;
@@ -349,6 +360,11 @@ div#title-logo div {
   font-size: 1.4em;
   padding: 4px;
   margin: 1em 0 1em 0;
+}
+@media (max-width: 1000px) {
+  .u-container-text h3 {
+    font-size: 1.2em;
+  }
 }
 .u-container-text a {
   color: #418cff !important;
@@ -693,7 +709,7 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
 .btn:hover {
-  background-color: #cce3e3;
+  background-color: #E5E8DB;
   color: black !important;
   cursor: pointer;
 }
@@ -1305,6 +1321,11 @@ th {
   opacity: 0;
   transition: height 550ms ease-in, opacity 550ms ease-in;
 }
+@media (max-width: 400px) {
+  #scrolly figure img {
+    width: 90%;
+  }
+}
 #scrolly figure img.is-visible {
   display: block;
   opacity: 1;
@@ -1329,7 +1350,7 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly .step p {
-    padding-left: 2rem;
+    padding: 0 3rem 0 3rem;
   }
 }
 #scrolly h1 {
@@ -1337,9 +1358,19 @@ th {
   font-size: 3em;
   color: white;
 }
+@media (max-width: 1000px) {
+  #scrolly h1 {
+    padding: 0 3rem 0 3rem;
+  }
+}
 #scrolly span {
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
   font-size: 0.55em;
+}
+@media (max-width: 1000px) {
+  #scrolly span {
+    line-height: 0.5em !important;
+  }
 }
 .index-date {
   font-size: 0.5em;
