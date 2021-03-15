@@ -1482,7 +1482,7 @@ th {
   position: relative;
   padding-top: 10%;
   padding-bottom: 10%;
-  margin-top: 5em;
+  margin-top: 4em;
   font-family: 'Crimson Text', serif;
   background-color: #E5E8DB;
 }
@@ -1662,6 +1662,7 @@ th {
   position: relative;
   padding-top: 10%;
   padding-bottom: 10%;
+  margin-top: 4em;
   font-family: 'Crimson Text', serif;
   background-color: #E5E8DB;
 }
