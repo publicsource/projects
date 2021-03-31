@@ -1902,9 +1902,9 @@ em {
   align-items: center;
 }
 .top-headline h1 {
-  font-size: 3.3em;
+  font-size: 3.2em;
   font-family: 'Crimson Text', serif;
-  max-width: 600px;
+  max-width: 500px;
   color: white;
   padding: 20px;
 }
