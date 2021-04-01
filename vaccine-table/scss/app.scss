@@ -2,10 +2,6 @@
 // Base
 // --------------------------------------------------
 
-@import "bourbon/bourbon";
-// @import "base/base";
-@import "neat/neat";
-@import "base/variables";
 
 //
 // Components
@@ -13,11 +9,6 @@
 //
 @import "components/_layout";
 @import "components/_type";
-@import "components/_footer";
-@import "components/_navigation";
-@import "components/_dropdown.scss";
-@import "components/_dividers.scss";
-@import "components/_scroll-on-page.scss";
 // @import "components/_photos.scss";
 //@import "components/_hero-unit.scss";
 // @import "components/_pullquote.scss";
@@ -28,7 +19,6 @@
 // @import "components/_flexbox.scss";
 // @import "components/_expander.scss";
 // @import "components/_wrapper.scss";
-@import "components/_buttons";
 //@import "components/_card.scss";
 //@import "components/_isotope.scss";
 // @import "components/_buttons";
