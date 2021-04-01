@@ -1,0 +1,123 @@
+//
+// Buttons
+// --------------------------------------------------
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn {
+	-webkit-font-smoothing: antialiased;
+	font-size: 12px;
+	padding: 15px 20px;
+	@include transition(background-color .15s linear, border-color .15s linear, color .15s linear, opacity .15s linear);
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 0px;
+	color: #ffffff;
+	display: inline-block;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-family: 'Alfa Slab One';
+	&:active,
+	&:focus {
+		outline: 0;
+	}
+}
+
+.button-blue {
+	background-color: #418cff;
+	color: white;
+	font-family: 'mallory', sans-serif;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	border: none;
+	padding: 20px;
+	cursor: pointer;
+
+}
+
+.button-inline {
+  appearance: none;
+  border-radius: px;
+  border: 1px solid #418cff;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 11px;
+  margin: 1.5% 1% 1.5% 1%;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color linear;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: 'mallory', sans-serif;
+  font-weight: 400;
+
+  &:hover {
+    background-color: #418cff;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: $brand-teal;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $brand-yellow;
+    }
+  }
+}
+
+.button-inline-red {
+  appearance: none;
+  border-radius: px;
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 15px;
+  margin: 1%;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color linear;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: 'mallory', sans-serif;
+  font-weight: 400;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: $brand-red;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $brand-red;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+ <!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-logo">
+    <a href="http://publicsource.org/"><img src="./img/logo.svg" alt="PublicSource"></a>
+  </div>
+  <p class="tagline">Stories for a better Pittsburgh.<br>
+Get our stories by email.</p>
+  <div class="footer-links">
+  <a href="https://www.publicsource.org/newsletter-signup/"><button class="button-blue">Sign up</button></a>
+  </div>
+</footer>
+
+<!-- Refills dropdown menu, removed this code
+jquery('.current-menu-item li a').removeAttr( 'href' );
+$button.html($(this).html()); -->
+      <script>
+            $(document).ready(function() {
+              $(".dropdown-button").click(function() {
+                var $button, $menu;
+                $button = $(this);
+                $menu = $button.siblings(".dropdown-menu");
+                $menu.toggleClass("show-menu");
+                $menu.children("li").click(function() {
+                  $menu.removeClass("show-menu");
+                });
+              });
+            });
+      </script>
+
+<!-- Refills scroll on page-->
+
+      <script>
+      (function (jQuery) {
+        jQuery.mark = {
+          jump: function (options) {
+            var defaults = {
+              selector: 'a.scroll-on-page-link'
+            };
+            if (typeof options == 'string') {
+              defaults.selector = options;
+            }
+
+            options = jQuery.extend(defaults, options);
+            return jQuery(options.selector).click(function (e) {
+              var jumpobj = jQuery(this);
+              var target = jumpobj.attr('href');
+              var thespeed = 1000;
+              var offset = jQuery(target).offset().top;
+              jQuery('html,body').animate({
+                scrollTop: offset
+              }, thespeed, 'swing');
+              e.preventDefault();
+            });
+          }
+        };
+      })(jQuery);
+
+
+      jQuery(function(){
+        jQuery.mark.jump();
+      });
+      </script>
+
+<!-- Google Analytics UA code -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-24107680-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+    </body>
+</html>
