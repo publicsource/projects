@@ -1927,7 +1927,7 @@ em {
 }
 @media (max-width: 868px) {
   .top-headline h1 {
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
 }
 .top-gallery {
@@ -2123,6 +2123,23 @@ em {
 .series-credits {
   color: white;
   text-align: center !important;
+}
+.show-desktop {
+  display: block;
+}
+@media (max-width: 868px) {
+  .show-desktop {
+    display: none;
+  }
+}
+.show-mobile {
+  display: none;
+  padding: 20px;
+}
+@media (max-width: 868px) {
+  .show-mobile {
+    display: block;
+  }
 }
 /* Slider */
 /* Slideshow container */
