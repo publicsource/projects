@@ -9,7 +9,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/assets/BlackLivesMatter-StatenIsl.otf);
+  src: url(./assets/BlackLivesMatter-StatenIsl.otf);
 }
 /*
  * Colors
@@ -1358,6 +1358,9 @@ th {
   .stats-box b {
     font-size: 1.15em;
   }
+}
+.stats-box i {
+  font-size: 12px;
 }
 /* Setting fade transition and default settings */
 body {
