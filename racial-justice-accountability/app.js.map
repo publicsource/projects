@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "sources": [
+    "node_modules/browser-pack-flat/_prelude",
+    "src/js/hamburger.js",
+    "src/js/colour-fade.js",
+    "src/js/main.js",
+    "node_modules/browser-pack-flat/_postlude"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA;ACDA,IAAI,SAAS,GAAG,QAAQ,CAAC,cAAT,CAAwB,YAAxB,CAAhB,CAAA;AACA,IAAI,IAAI,GAAG,QAAQ,CAAC,cAAT,CAAwB,gBAAxB,CAAX,CAAA;AAEA,SAAS,CAAC,gBAAV,CAA2B,OAA3B,EAAoC,UAAS,CAAT,EAAW;EAC7C,IAAI,IAAI,CAAC,SAAL,CAAe,QAAf,CAAwB,MAAxB,CAAJ,EAAqC;IACnC,IAAI,CAAC,SAAL,CAAe,MAAf,CAAsB,MAAtB,CAAA,CAAA;GADF,MAEO;IACL,IAAI,CAAC,SAAL,CAAe,GAAf,CAAmB,MAAnB,CAAA,CAAA;GACD;CALH,CAAA,CAAA;;AAOA,SAAS,UAAT,GAAsB,EAErB;;;ACZD,CAAC,CAAC,MAAD,CAAD,CAAU,MAAV,CAAiB,YAAW;;EAG1B,IAAI,OAAO,GAAG,CAAC,CAAC,MAAD,CAAf;MACI,KAAK,GAAG,CAAC,CAAC,MAAD,CADb;MAEI,MAAM,GAAG,CAAC,CAAC,QAAD,CAFd,CAH0B;;EAQ1B,IAAI,MAAM,GAAG,OAAO,CAAC,SAAR,EAAA,GAAuB,OAAO,CAAC,MAAR,EAAA,GAAmB,CAAvD,CAAA;EAEA,MAAM,CAAC,IAAP,CAAY,YAAY;IACtB,IAAI,KAAK,GAAG,CAAC,CAAC,IAAD,CAAb,CADsB;;;;IAMtB,IAAI,KAAK,CAAC,QAAN,EAAA,CAAiB,GAAjB,IAAwB,MAAxB,IAAkC,KAAK,CAAC,QAAN,EAAA,CAAiB,GAAjB,GAAuB,KAAK,CAAC,MAAN,EAAvB,GAAwC,MAA9E,EAAsF;;MAGpF,KAAK,CAAC,WAAN,CAAkB,UAAU,KAAV,EAAiB,GAAjB,EAAsB;QACtC,OAAO,CAAC,GAAG,CAAC,KAAJ,CAAW,kBAAX,CAAA,IAAkC,EAAnC,EAAuC,IAAvC,CAA4C,GAA5C,CAAP,CAAA;OADF,CAAA,CAHoF;;MAQpF,KAAK,CAAC,QAAN,CAAe,QAAA,GAAW,CAAC,CAAC,IAAD,CAAD,CAAQ,IAAR,CAAa,OAAb,CAA1B,CAAA,CAAA;KACD;GAfH,CAAA,CAAA;CAVF,CAAA,CA4BG,MA5BH,EAAA,CAAA;;;ACAA;AACA,aAAA,CAAA;;AACA,cAAA;;;AAGA,GAAG,CAAC,IAAJ,EAAA,CAAA;ACLA;AACA",
+  "file": "generated.js",
+  "sourceRoot": "",
+  "sourcesContent": [
+    "(function(){\n",
+    "var hamburger = document.getElementById('nav-burger');\nvar linx = document.getElementById('main-nav-links');\n\nhamburger.addEventListener('click', function(e){\n  if (linx.classList.contains('show')) {\n    linx.classList.remove('show');\n  } else {\n    linx.classList.add('show');\n  }\n})\nfunction myFunction() {\n\n}\n",
+    "$(window).scroll(function() {\n\n  // selectors\n  var $window = $(window),\n      $body = $('body'),\n      $panel = $('.panel');\n\n  // Change 33% earlier than scroll position so colour is there when you arrive.\n  var scroll = $window.scrollTop() + ($window.height() / 3);\n\n  $panel.each(function () {\n    var $this = $(this);\n\n    // if position is within range of this panel.\n    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).\n    // Remember we set the scroll to 33% earlier in scroll var.\n    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {\n\n      // Remove all classes on body with color-\n      $body.removeClass(function (index, css) {\n        return (css.match (/(^|\\s)color-\\S+/g) || []).join(' ');\n      });\n\n      // Add class of currently active div\n      $body.addClass('color-' + $(this).data('color'));\n    }\n  });\n\n}).scroll();\n",
+    "// require(\"./lib/pym\");\nrequire(\"./hamburger\");\nrequire(\"./colour-fade\");\n\n// aos on scroll (animate on scroll) library init\nAOS.init();\n",
+    "\n}());"
+  ]
+}
