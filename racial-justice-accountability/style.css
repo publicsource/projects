@@ -47,7 +47,7 @@
 }
 #main-nav #main-nav-links.show {
   display: block;
-  background: #202020;
+  background: #010101;
 }
 #main-nav #main-nav-links a {
   text-decoration: none;
@@ -63,7 +63,7 @@
   color: #418cff !important;
 }
 #active {
-  border-bottom: 4px solid #cce3e3;
+  border-bottom: 4px solid #010101;
 }
 #main-nav #main-nav-links span {
   padding-right: 15px;
@@ -1123,6 +1123,8 @@ th {
 @media (max-width: 1100px) {
   .headline h1 {
     font-size: 2.4em;
+    margin-right: 1em;
+    margin-left: 1em;
   }
 }
 .date {
@@ -1133,7 +1135,16 @@ th {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
   margin-top: 3em;
+}
+@media (max-width: 500px) {
+  .lead-photo {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0;
+  }
 }
 .u-container-text {
   font-family: 'EB Garamond', serif;
@@ -1170,8 +1181,7 @@ th {
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
   font-size: 1.4em;
   font-weight: 700;
-  padding: 20px;
-  margin: 1em 0 1em 0;
+  padding: 10px;
   text-align: left;
 }
 @media (max-width: 1100px) {
@@ -1306,7 +1316,7 @@ th {
 }
 @media (max-width: 1100px) {
   .inline-related-stories {
-    max-width: 200px;
+    max-width: 175px;
     font-size: 13.5px;
     line-height: 1.25em;
     margin-bottom: 1.5em;
@@ -1342,7 +1352,7 @@ th {
 }
 @media (max-width: 1100px) {
   .stats-box {
-    max-width: 200px;
+    max-width: 175px;
     font-size: 13.5px;
     line-height: 1.25em;
     margin-bottom: 1.5em;
