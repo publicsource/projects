@@ -288,9 +288,9 @@ div#title-logo div {
 }
 .u-container-pullquote h3 {
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
+  font-size: 1.7em;
   font-weight: 700;
-  line-height: 1.1em;
+  line-height: 1.25em;
   margin: 1em 0 1em 0;
 }
 @media (max-width: 1000px) {
@@ -313,7 +313,7 @@ div#title-logo div {
 }
 @media (max-width: 1000px) {
   .u-container-text h2 {
-    font-size: 0.975em;
+    font-size: 1.2em;
     margin-top: 1.5em;
     margin-left: 20px;
     margin-right: 20px;
