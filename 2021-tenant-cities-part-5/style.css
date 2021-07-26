@@ -272,6 +272,7 @@ div#title-logo div {
   display: grid;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
 }
 @media (max-width: 1000px) {
   .u-container-text-color {
@@ -431,6 +432,7 @@ div#title-logo div {
   font-size: 16px;
   font-weight: 300;
   color: #787878;
+  margin-bottom: 0;
 }
 @media (max-width: 1000px) {
   .caption p {
