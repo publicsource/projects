@@ -1,0 +1,566 @@
+//
+// Wraps
+// --------------------------------------------------
+
+
+.top {
+	@include outer-container(50%);
+	text-align: center;
+  margin-top: 6.5em;
+    @include media(max-width $screen-column-collapse) {
+       @include outer-container(95%);
+       margin-top: 6em;
+       }
+}
+
+.top h2 {
+    @include rem(font-size, 36px);
+    font-weight: 500;
+    @include rem(margin-top, 10px);
+    @include rem(margin-bottom, 5px);
+    @include media(max-width $screen-column-collapse) {
+        @include rem(font-size, 30px);
+    }
+}
+
+.top h4 {
+  font-size: 1.25em;
+  text-align: left;
+  font-weight: 400;
+  @media(max-width: $screen-column-collapse){
+    @include outer-container(100%);
+    font-size: 1.25em;
+    padding-top: 5px;
+  }
+}
+
+.top h6 {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: 2em;
+  margin-bottom: -1em;
+  color: white;
+  //font-family: 'Crimson-Text';
+  @media(max-width: $screen-column-collapse){
+    @include outer-container(100%);
+    font-size: 1.1em;
+    padding-top: 5px;
+  }
+}
+
+.container-story {
+  background-color: $brand-grey;
+}
+
+.container-video {
+  background-color: $brand-black;
+  @include rem(margin-top, 90px);
+  @include rem(padding, 10px);
+  @include media(max-width $screen-column-collapse) {
+    padding: 0;
+    @include rem(margin-top, 70px);
+  }
+}
+
+
+.container-pullquote {
+  background-color: $brand-black;
+  @include rem(padding-bottom, 60px);
+
+}
+
+.container-morestories {
+  background-color: $brand-black;
+  @include rem(margin, 100px);
+
+}
+
+.video-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+  position: relative;
+
+  embed,
+  object,
+  iframe {
+    @include position(absolute, 0 null null 0);
+    @include size(100%);
+  }
+}
+
+.video {
+  text-align: center;
+  //padding-top: 4em;
+}
+
+.autoplay-video {
+  @include outer-container (75%);
+    @include media(max-width $screen-column-collapse) {
+      @include outer-container (85%);
+    }
+}
+
+.autoplay-video.u-hide-mobile {
+  @include media(max-width $screen-mobile) {
+    display: none;
+  }
+}
+
+.autoplay-video.u-hide-mobile video{
+  @include media(max-width $screen-mobile) {
+    display: none;
+  }
+}
+
+.box-story {
+    @include outer-container(660px);
+    @include media(max-width $screen-column-collapse) {
+        @include outer-container(90%);
+        @include rem(font-size, 22px);
+    }
+}
+
+.box-story p {
+  font-family: 'Crimson-Text';
+  @include rem(font-size, 22px);
+  @include rem(line-height, 30px);
+  color: black;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 24px);
+      @include rem(line-height, 32px);
+    }
+}
+
+.box-story ol, ul {
+  font-family: 'Crimson-Text';
+  @include rem(font-size, 22px);
+  @include rem(line-height, 30px);
+  color: black;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 24px);
+      @include rem(line-height, 32px);
+    }
+}
+
+.box-story b {
+  font-family: 'Mallory';
+  font-weight: 600;
+  @include rem(font-size, 20px);
+  @include rem(line-height, 30px);
+  color: black;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 21.5px)
+    }
+}
+
+.box-story h2 {
+  font-family: 'Mallory';
+  font-weight: 500;
+  @include rem(font-size, 36px);
+  @include rem(line-height, 30px);
+  color: black;
+  margin: 1.5em 0 1.5em 0;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 30px)
+    }
+}
+
+.box-story h6 {
+  @include outer-container (56%);
+  color: $brand-black;
+  text-align: center;
+  font-weight: 300;
+  font-size: .8em;
+  font-family: 'Mallory';
+  margin-top: -1em;
+  @media(max-width: $screen-column-collapse){
+    @include outer-container(100%);
+    font-size: .6em;
+    margin-top: 1em;
+  }
+}
+
+.box-data {
+    @include outer-container(760px);
+    @include media(max-width $screen-column-collapse) {
+        @include outer-container(90%);
+    }
+}
+
+.box-data b {
+  font-family: 'Mallory';
+  font-weight: 600;
+  @include rem(font-size, 20px);
+  @include rem(line-height, 30px);
+  color: black;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 21.5px)
+    }
+}
+
+.box-data h6 {
+  @include outer-container (85%);
+  color: $brand-black;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1em;
+  font-family: 'Mallory';
+  margin-top: -1em;
+  @media(max-width: $screen-column-collapse){
+    @include outer-container(100%);
+    font-size: .8em;
+    //margin-top: 1em;
+  }
+}
+
+
+
+.main-wide {
+    @include outer-container(90%);
+    padding: 2.5em 0 2.5em 0;
+    max-width: 1000px;
+}
+
+.main-wide h2 {
+  @include rem(font-size, 30px);
+  font-family: 'Mallory';
+  font-weight: 500;
+  color: white;
+  text-align: left;
+  line-height: 1.1em;
+  padding-left: 3em;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 30px);
+      text-align: left;
+      padding-left: 0;
+    }
+}
+
+
+//
+// Text
+// --------------------------------------------------
+
+.author {
+  //text-transform: uppercase;
+  font-weight: 500;
+  padding: .5em 0 .5em 0;
+  @include rem(font-size, 16px);
+}
+
+.date {
+  text-transform: uppercase;
+  font-weight: 100;
+  @include rem(font-size, 12px);
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 13px);
+    }
+}
+
+.editornote {
+  text-align:center;
+  margin: 2em 0 2em 0;
+    @include media(max-width $screen-column-collapse) {
+      margin: 1em 0 1em 0;
+    }
+}
+
+i {
+    color: $brand-black;
+}
+
+//
+// Padding / margin / helpers
+// --------------------------------------------------
+
+
+.divider-padding {
+  padding-bottom: 2em;
+      @include media(max-width $screen-column-collapse) {
+        padding-bottom: 1em;
+    }
+}
+
+.pullquote-margin {
+  margin-top: 4em;
+      @include media(max-width $screen-column-collapse) {
+        margin-top: 2em;
+    }
+}
+
+.image-margin {
+  margin: 1.5em 0 1.5em 0;
+}
+
+.extra-padding {
+  padding: 2em 0 2em 0;
+      @include media(max-width $screen-column-collapse) {
+        padding: .5em 0 .5em 0;
+    }
+}
+
+.more-padding {
+  padding: 3em 0 1em 0;
+      @include media(max-width $screen-column-collapse) {
+        padding: .5em 0 .5em 0;
+    }
+}
+
+.margin-top {
+  padding: 5em 0 0em 0;
+      @include media(max-width $screen-column-collapse) {
+        margin: .5em 0 0em 0;
+    }
+}
+
+.video-margin {
+  text-align: center;
+  padding-top: 4em;
+}
+
+.autoplay-margin {
+  text-align: center;
+  padding-top: 4em;
+      @include media(max-width $screen-column-collapse) {
+        padding-top: 0;
+    }
+}
+
+.hide-mobile {
+    @include media(max-width $screen-column-collapse) {
+    display: none;
+    }
+}
+
+//
+// Photo
+// --------------------------------------------------
+
+.submitted-photo {
+  display: block;
+  height: 25em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+      @include media(max-width $screen-column-collapse) {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+.half-photo {
+  @include span-columns(6 of 12);
+      @include media(max-width 1160px) {
+        @include span-columns(12 of 12);
+    }
+}
+
+.half-photo-pullquote-brian {
+  @include span-columns(6 of 12);
+  padding: 7.5em 0 2em 0;
+    @include media(max-width 1160px) {
+        @include span-columns(12 of 12);
+        padding: 0;
+    }
+}
+
+.half-photo-pullquote {
+  @include span-columns(6 of 12);
+  padding: 2.5em 0 2em 0;
+    @include media(max-width 1160px) {
+        @include span-columns(12 of 12);
+        padding: 0;
+    }
+}
+
+.half-photo-pullquote h2{
+    text-align: center;
+    font-size: 1.8em;
+    @include media(max-width 1160px) {
+        @include rem(padding, 20px 0px 0px);
+    }
+}
+
+.half-photo-pullquote-brian h2{
+    text-align: center;
+    font-size: 2em;
+    @include media(max-width 1160px) {
+        @include rem(padding, 20px 0px 0px);
+    }
+}
+
+.caption {
+  @include outer-container (56%);
+  color: $brand-grey;
+  font-weight: 300;
+  font-size: .85em;
+  text-align: center;
+  //padding-top: 8px;
+  margin: 0 auto;
+  @media(max-width: $screen-column-collapse){
+    @include outer-container(100%);
+    font-size: .85em;
+    padding-top: 5px;
+  }
+}
+
+
+// Subscribe, donate, share section, more stories, series callout
+
+.container-morestories {
+  background-color: $brand-black;
+}
+
+.more-box {
+    @include span-columns (12 of 12);
+    margin: 3em 0 3em 0;
+}
+
+.more-box-second {
+    @include span-columns (12 of 12);
+    margin: -2em 0 3em 0;
+    @include media(max-width $screen-column-collapse) {
+        margin: 0 0 3em 0;
+    }
+}
+
+.more-stories-wrap {
+    @include outer-container(80%);
+    @include media(max-width $screen-column-collapse) {
+        @include outer-container(90%);
+    }
+}
+
+.more-box-item-fourths {
+    @include span-columns (2 of 12);
+    text-align:center;
+    @include media(max-width $screen-column-collapse){
+        @include span-columns (12 of 12);
+        margin-bottom: 2em;
+    }
+}
+
+.more-stories-lead{
+    font-weight: 500;
+    line-height: 1.1;
+    padding-top: 1em;
+    @include media(min-width $screen-column-collapse){
+        @include rem(font-size, 36px);
+    }
+    @include media(max-width $screen-column-collapse){
+        @include rem(font-size, 30px);
+    }
+}
+
+.more-headline {
+    font-family: "Mallory";
+    font-size: 1em;
+    text-align: left;
+    line-height: 1.2;
+    padding-right: 1.8em;
+      a {
+            @include transition(color .15s linear);
+            color: white;
+            &:hover{
+                color: $brand-blue;
+            }
+        }
+}
+
+.bottom {
+    text-align: center;
+    //margin-bottom: 5em;
+    @include outer-container (60%);
+        @media(max-width: $screen-column-collapse){
+        @include outer-container (100%);
+        margin-bottom: 0;
+        }
+}
+
+.center {
+  text-align: center;
+}
+
+.side-series-headline {
+    font-family: "Mallory";
+    font-weight: 900;
+    margin: .3em;
+    line-height: 1.2;
+    font-size: 2em;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
+.ps-callout {
+  @include span-columns (3 of 12);
+}
+
+.callout-box {
+    font-family: 'Mallory';
+    border: .5px solid $brand-blue;
+    font-size: 1.3em;
+    text-align: center;
+    padding: .5em 0 .5em 0;
+    img {
+      height: 1.5em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: .8em;
+    }
+    margin: 2em 0 2em 0;
+        @media(max-width: $screen-column-collapse){
+        font-size: 1.2em;
+        }
+}
+
+.callout-box h3 {
+    font-family: 'Mallory';
+    font-size: .95em;
+    font-weight: 600;
+    text-align: center;
+    color: $brand-black;
+    padding: 0 4em 4em 0;
+        @media(max-width: $screen-column-collapse){
+        font-size: .8em;
+        }
+}
+
+.callout-box h4 {
+    font-family: 'Mallory';
+    font-size: .83em;
+    font-weight: 400;
+    text-align: center;
+    color: $brand-black;
+    padding: 0 4em 4em 0;
+        @media(max-width: $screen-column-collapse){
+        font-size: .8em;
+        text-align: left;
+        }
+}
+
+.callout-box h2 {
+    font-weight: 600;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    @include rem(margin-top, 30px);
+    @include rem(margin-bottom, 30px);
+    @include media(max-width $screen-column-collapse) {
+        @include rem(font-size, 30px);
+    }
+}
+
+.callout-box p {
+    font-family: 'Mallory';
+    font-size: .83em;
+    font-weight: 300;
+    line-height: 1.3em;
+    text-align: center;
+    padding: 0 2em 0 2em;
+        @media(max-width: $screen-column-collapse){
+        font-size: .75em;
+        }
+}

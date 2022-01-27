@@ -1,0 +1,204 @@
+//
+// Photo classes - boxes and wraps
+//
+
+.wrap-wide {
+	max-width: 2500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main-wide { 
+    @include outer-container(100%);
+    @media(max-width: $screen-mobile){
+		@include outer-container(100%);
+	}
+}
+
+.vertical { 
+    @include outer-container(45%);
+    @media(max-width: $screen-mobile){
+		@include outer-container(90%);
+	}
+}
+
+.inline-photos {
+	 @media(min-width: $screen-mobile){
+		margin: 2.8% auto;
+	}
+}
+
+.inline-photos-no-top {
+	 @media(min-width: $screen-mobile){
+		margin: 0 2.8% 2.8% 2.8%;
+	}
+}
+
+.inline-photos-middle {
+	 @media(min-width: $screen-mobile){
+		margin: 3% 0 0 0%;
+	}
+}
+
+.full-width-hero-top {
+	@include span-columns(12);
+	margin-top: 55px;
+}
+
+.full-width-hero {
+	@include span-columns(12);
+		@media(min-width: $screen-mobile){
+		margin-top: -1.5%;
+		}
+		@media(max-width: $screen-mobile){
+		margin-top: 1%;
+		}
+}
+
+.full-width-hero-less-top {
+	@include span-columns(12);
+		@media(min-width: $screen-mobile){
+		margin-top: .5%;
+		}
+		@media(max-width: $screen-mobile){
+		margin-top: 1%;
+		}
+}
+
+.full-width-hero-more-top {
+	@include span-columns(12);
+		@media(min-width: $screen-mobile){
+		margin-top: 3%;
+		}
+		@media(max-width: $screen-mobile){
+		margin-top: 8%;
+		}
+}
+
+.full-width-hero-top-photo {
+	@include span-columns(12);
+		@media(min-width: $screen-mobile){
+		margin-top: .5%;
+		}
+		@media(max-width: $screen-mobile){
+		margin-top: 1%;
+		margin-bottom: 2%;
+		}
+}
+
+
+
+.half-photo {
+	@include span-columns(6 of 12, table);
+	@media(min-width: 769px){
+		padding: 0 5px 0 0;
+	}
+	@media(max-width: $screen-mobile){
+		@include span-columns(12 of 12);
+		margin-top: 2%;
+	}
+}
+
+.half-photo-second {
+	@include span-columns(6 of 12, table);
+	@media(min-width: 769px){
+		padding: 0 0 0 5px;
+	}
+	@media(max-width: $screen-mobile){
+		@include span-columns(12 of 12);
+		margin-top: 5%;
+	}
+}
+
+
+//
+// Photo classes - captions
+//
+
+.side-caption {
+	color: #676767;
+	font-weight: 300;
+	font-size: .85em;
+	text-align: left;
+	padding: 0 10px 0 5px;
+	margin: 0 auto;
+}
+
+.middle-caption {
+	@include outer-container (56%);
+	color: #676767;
+	font-weight: 300;
+	font-size: .85em;
+	text-align: center;
+	padding-top: 8px;
+	margin: 0 auto;
+	@media(max-width: $screen-mobile){
+		@include outer-container(100%);
+		font-size: .85em;
+		padding-top: 5px;
+		text-align: left;
+	}
+}
+
+.full-width-caption {
+	color: #676767;
+	padding: 8px 20px 0px;
+	font-weight: 300;
+	font-size: .85em;
+	text-align: center;
+	margin: 0 auto;
+	@media(max-width: $screen-mobile){
+		@include outer-container(100%);
+		font-size: .85em;
+		padding-top: 5px;
+		text-align: left;
+	}
+}
+
+//
+// Photo classes - charter interactive
+//
+
+.quarter-photo {
+	@include span-columns(4 of 12, table);
+	@media(min-width: 769px){
+		padding: 0 5px 0 0;
+	}
+	@media(max-width: $screen-mobile){
+		@include span-columns(12 of 12);
+		margin-top: 2%;
+	}
+}
+
+.half-photo-second {
+	@include span-columns(6 of 12, table);
+	@media(min-width: 769px){
+		padding: 0 0 0 5px;
+	}
+	@media(max-width: $screen-mobile){
+		@include span-columns(12 of 12);
+		margin-top: 5%;
+	}
+}
+
+
+//
+// Chart Wrappers for Turnover Story
+//
+
+.chart-wrap{
+	@include outer-container();
+	margin-bottom: 2em;
+}
+
+
+.third-photo {
+	@include span-columns(4 of 12);
+	@media(min-width: $screen-mobile){
+		padding: 0px 1%;
+	}
+	@media(max-width: $screen-mobile){
+		@include span-columns(12 of 12);
+		margin-top: 2%;
+	}
+}

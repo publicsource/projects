@@ -1,0 +1,43 @@
+section#section-three {
+  @include outer-container(1400px);
+}
+
+section#section-three .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include media(max-width $screen-mobile) {
+		 grid-template-columns: 1fr;
+     margin: 0 30px 0 30px;
+     grid-gap: 0;
+	}
+}
+
+section#section-three .grid {
+
+  .item1 {
+    padding: 20px;
+    @include media(max-width $screen-mobile) {
+  		margin-right: 0;
+      padding: 0;
+  	}
+}
+
+  .item2 {
+    padding: 20px;
+    color: black;
+    @include media(max-width $screen-mobile) {
+  		padding: 0px;
+  	}
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        line-height: 1.1em;
+      }
+    }
+
+}
+
+.subhed {
+    font-family: mallory, sans-serif;
+}
