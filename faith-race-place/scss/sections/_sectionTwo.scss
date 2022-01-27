@@ -1,0 +1,36 @@
+section#section-two {
+  @include outer-container(1300px);
+  height: 100vh;
+  @include media(max-width $screen-mobile) {
+     height: auto;
+  }
+}
+
+section#section-two .grid {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-column-gap: 50px;
+  padding: 20px;
+  margin: 0;
+  @include media(max-width $screen-mobile) {
+     grid-template-columns: 1fr;
+     grid-column-gap: 0px;
+     padding: 0 30px 0 30px;
+  }
+
+  p {
+    font-size: 1.7em !important;
+    font-weight: 500;
+    color: black;
+  }
+}
+
+section#section-two .grid {
+  .item1 {
+    grid-row: 2 / 1;
+  }
+
+  .item2 {
+    grid-row: 1 / 3;
+  }
+}

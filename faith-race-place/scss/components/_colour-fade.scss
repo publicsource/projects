@@ -1,0 +1,63 @@
+/* Setting fade transition and default settings */
+body {
+  color: white;
+  background-color: black;
+  transition: background-color 1s ease;
+}
+
+
+/* panel styles */
+.panel-title {
+  /* min height incase content is higher than window height */
+  min-height: 132vh;
+  background-image: url("https://www.publicsource.org/wp-content/uploads/2021/05/rally_3633-1.jpg");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* panel styles */
+
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 30vh;
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+/* colours */
+.color-violet {
+  background-color: #7A4EAB;
+}
+.color-indigo {
+  background-color: #4332CF;
+}
+.color-blue {
+  background-color: #A8B8AD;
+}
+.color-green {
+  background-color: #4DCF42;
+}
+.color-yellow {
+  background-color: #AF7A0C;
+}
+.color-yellow2{
+}
+.color-orange {
+  background-color: #F19031;
+}
+.color-red {
+}
+.color-black {
+  background-color: black;
+}
+
+.color-white {
+  background-color: white;
+}

@@ -1,0 +1,54 @@
+.divider-top {
+  border-bottom: 1px solid #000;
+  padding: .7em;
+  padding-top: 4em;
+  margin-bottom: 2em;
+      @include media(max-width $screen-column-collapse) {
+      //display: none;
+      margin: 0;
+      padding: 1em;
+    }
+
+}
+
+.divider-bottom {
+  border-bottom: 1px solid #000;
+  //padding: .7em;
+  margin-bottom: 4em;
+      @include media(max-width $screen-column-collapse) {
+      //display: none;
+      margin-bottom: 2em;
+    }
+
+}
+
+.divider-callout {
+  border-bottom: .5px solid $brand-blue;
+  padding: .5em;
+  margin-bottom: 1.5em;
+      @include media(max-width $screen-column-collapse) {
+      display: none;
+    }
+
+}
+
+.divider-credits-top {
+  float: left;
+  border-bottom: 15px solid black;
+  border-radius: 1px;
+  width: 15%;
+  margin-top: .5em;
+}
+
+.up {
+  @include triangle(20px, $brand-black, up);
+  display: inline-block;
+  margin: 2.5em 0 2.5em 0;
+}
+
+.down {
+  @include triangle(20px, $brand-blue, down);
+  display: inline-block;
+  margin: 2.5em 0 2.5em 0;
+
+ }
