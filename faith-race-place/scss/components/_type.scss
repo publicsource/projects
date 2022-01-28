@@ -46,8 +46,8 @@ li{
 a{
 	@include transition(color .15s linear);
 	text-decoration: none;
-	color: $brand-blue;
+	color: black;
 	&:hover{
-		color: $brand-darkgrey;
+		color: $brand-blue;
 	}
 }
