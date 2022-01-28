@@ -5,8 +5,8 @@ section#section-five-title {
   align-items: center;
   justify-items: center;
   color: black;
+  padding: 0 30px 0 30px;
   @include media(max-width $screen-mobile) {
-     margin: 0 30px 0 30px;
   }
 
   h1 {
@@ -26,8 +26,8 @@ section#section-five-title {
 section#section-five {
   @include outer-container(1300px);
   color: black;
+  padding: 0 30px 0 30px;
   @include media(max-width $screen-mobile) {
-     margin: 0 30px 0 30px;
   }
 
   h2 {
@@ -57,6 +57,7 @@ section#section-five .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 1em;
+  grid-row-gap: 2em;
   @include media(max-width $screen-mobile) {
     grid-template-columns: repeat(2, 1fr);
     // grid-template-rows: repeat(6, 1fr);

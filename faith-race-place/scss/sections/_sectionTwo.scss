@@ -3,6 +3,8 @@ section#section-two {
   padding-top: 5em;
   padding-bottom: 5em;
   @include media(max-width $screen-mobile) {
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 }
 

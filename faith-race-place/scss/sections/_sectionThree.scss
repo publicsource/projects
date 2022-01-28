@@ -15,7 +15,7 @@ section#section-three .grid {
 section#section-three .grid {
 
   .item1 {
-    padding: 20px;
+    padding: 30px;
     @include media(max-width $screen-mobile) {
   		margin-right: 0;
       padding: 0;
@@ -23,10 +23,11 @@ section#section-three .grid {
 }
 
   .item2 {
-    padding: 20px;
+    padding: 30px;
     color: black;
     @include media(max-width $screen-mobile) {
   		padding: 0px;
+      margin-top: 1em;
   	}
 
       h2 {
