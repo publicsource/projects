@@ -1,7 +1,7 @@
 section#section-two {
   @include outer-container(1300px);
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 3em;
+  padding-bottom: 1em;
   @include media(max-width $screen-mobile) {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -11,8 +11,7 @@ section#section-two {
 section#section-two .grid {
   display: grid;
   grid-template-columns: 10% 1fr 10%;
-  grid-column-gap: 50px;
-  padding: 20px;
+  grid-column-gap: 30px;
   margin: 0;
   @include media(max-width $screen-mobile) {
      grid-template-columns: 1fr;
