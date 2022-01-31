@@ -97,14 +97,6 @@
 		"oAP": "/humans.txt",
 		"oF": 0
 		},
-	"/img/favicon.ico": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/img/favicon.ico",
-		"oF": 0
-		},
 	"/img/favicon.png": {
 		"ft": 32768,
 		"iS": 51699,
@@ -174,71 +166,6 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/ps-logo-square.png": {
-		"ft": 32768,
-		"iS": 7350,
-		"oA": 0,
-		"oAP": "/img/ps-logo-square.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/pslogo-circle.png": {
-		"ft": 32768,
-		"iS": 11126,
-		"oA": 0,
-		"oAP": "/img/pslogo-circle.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/pslogo-horizontal.png": {
-		"ft": 32768,
-		"iS": 10717,
-		"oA": 0,
-		"oAP": "/img/pslogo-horizontal.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/publicsource_logo_white.png": {
-		"ft": 32768,
-		"iS": 50591,
-		"oA": 0,
-		"oAP": "/img/publicsource_logo_white.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/repair.png": {
-		"ft": 32768,
-		"iS": 9763,
-		"oA": 0,
-		"oAP": "/img/repair.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

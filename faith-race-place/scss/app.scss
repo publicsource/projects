@@ -10,22 +10,17 @@
 //
 // Components
 // --------------------------------------------------
-@import "components/_buttons";
-@import "components/_more-stories.scss";
 @import "components/_footer";
 @import "components/_layout";
 @import "components/_navigation";
-@import "components/_dividers.scss";
 @import "components/_type";
 @import "components/_utilities.scss";
-@import "components/_grid-2.scss";
 @import "components/_colour-fade.scss";
 
 //
 // pages
 // --------------------------------------------------
 @import "sections/_home.scss";
-@import "sections/_about.scss";
 @import "sections/_sectionOne.scss";
 @import "sections/_sectionTwo.scss";
 @import "sections/_sectionThree.scss";
@@ -38,4 +33,3 @@
 //
 // Vendors
 // --------------------------------------------------
-@import "vendors/animate.scss";
