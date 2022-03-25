@@ -21180,30 +21180,34 @@ if (homepage) {
 
     scroller.setup({
       step: '#scrolly article .step',
-      offset: 0.68,
+      offset: 0.8,
       debug: false
     }).onStepEnter(handleStepEnter);
     window.addEventListener('resize', handleResize);
     scroller2.setup({
       step: '#scrolly2 article .step',
-      offset: 0.98,
+      offset: 0.8,
       debug: false
     }).onStepEnter(handleStepEnter2);
+    window.addEventListener('resize', handleResize2);
     scroller3.setup({
       step: '#scrolly3 article .step',
-      offset: 0.68,
+      offset: 0.8,
       debug: false
     }).onStepEnter(handleStepEnter3);
+    window.addEventListener('resize', handleResize3);
     scroller4.setup({
       step: '#scrolly4 article .step',
-      offset: 0.98,
+      offset: 0.8,
       debug: false
     }).onStepEnter(handleStepEnter4);
+    window.addEventListener('resize', handleResize4);
     scroller5.setup({
       step: '#scrolly5 article .step',
-      offset: 0.98,
+      offset: 0.8,
       debug: false
     }).onStepEnter(handleStepEnter5);
+    window.addEventListener('resize', handleResize5);
   } // kick things off
 
 

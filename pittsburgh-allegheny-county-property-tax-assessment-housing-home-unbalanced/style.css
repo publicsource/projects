@@ -159,6 +159,7 @@ div#title-logo div {
 .date {
   text-transform: uppercase;
   color: white !important;
+  font-family: 'PT Mono', monospace !important;
 }
 .lead-wrapper-mobile {
   display: none;
