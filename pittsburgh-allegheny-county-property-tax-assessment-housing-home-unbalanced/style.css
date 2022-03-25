@@ -146,7 +146,7 @@ div#title-logo div {
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
   max-width: 450px;
   text-align: center;
-  font-size: 2.2em;
+  font-size: 2.3em;
   color: white;
   font-weight: 700;
 }
@@ -282,10 +282,8 @@ div#title-logo div {
   display: inline-block;
 }
 .u-container-text h3 {
-  font-family: 'PT Mono', monospace;
   font-weight: 700;
   font-size: 1.1em;
-  border: 1px dashed black;
   padding: 4px;
   margin: 2em 0 2em 0;
 }
