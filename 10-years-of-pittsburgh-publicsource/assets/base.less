@@ -1,0 +1,137 @@
+@import "values";
+@import "skeleton";
+@import "nav";
+@import "landing";
+@import "footer";
+@import "animate";
+@import "wavy";
+@import "story";
+@import "parallax";
+@import "partners";
+@import "scrollama";
+@import "plyr.less";
+
+@font-face {
+  font-family: 'LatoThin';
+  src: url('assets/fonts/lato/Lato-Thin.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoLight';
+  src: url('assets/fonts/lato/Lato-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoReg';
+  src: url('assets/fonts/lato/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  src: url('assets/fonts/lato/Lato-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBoldItalic';
+  src: url('assets/fonts/lato/Lato-BoldItalic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PeaceSans';
+  src: url('assets/fonts/peace-sans/Peace-Sans-Webfont.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CrimsonRoman';
+  src: url('assets/fonts/crimson-text/CrimsonText-Roman.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-Reg';
+  src: url('assets/fonts/noto-serif/NotoSerif-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-Italic';
+  src: url('assets/fonts/noto-serif/NotoSerif-Italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerif-Bold';
+  src: url('assets/fonts/noto-serif/NotoSerif-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//defensive coding
+* {
+  //border-box, you're the best
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  //Safari, you're the worst
+  -webkit-tap-highlight-color: transparent;
+}
+
+//elements
+body {
+  padding: 0;
+  margin: 0;
+  //remove 300ms click delay in Safari, AKA still the worst
+  touch-action: manipulation;
+  font-family: "CrimsonRoman", @sans;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "PeaceSans";
+  font-size: 20px;
+  color: #666;
+}
+
+h2{
+  font-family: "LatoReg";
+  font-size: 2em;
+}
+
+h3{
+  font-family: "LatoReg";
+  font-size: 1.2em;
+}
+
+a, a:visited {
+  color: @accent-dark;
+}
+
+a:hover, a:active, a:focus {
+  color: black;
+}
+
+img:not([alt]) {
+  outline: 3px solid red;
+}

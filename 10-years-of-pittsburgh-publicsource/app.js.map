@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "sources": [
+    "node_modules/browser-pack-flat/_prelude",
+    "src/js/main.js",
+    "node_modules/browser-pack-flat/_postlude"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA;ACDA;;AAGA,MAAM,CAAC,MAAP,GAAgB,YAAU;EACxB,IAAI,KAAK,GAAG,QAAQ,CAAC,cAAT,CAAwB,iBAAxB,CAAZ,CAAA;;EACA,IAAG,KAAH,EAAS;IACP,IAAI,UAAU,GAAG,QAAQ,CAAC,cAAT,CAAwB,iBAAxB,CAAA,CAA2C,oBAA3C,CAAgE,GAAhE,CAAjB,CAAA;;IACA,KAAK,IAAI,CAAC,GAAC,CAAX,EAAc,CAAC,GAAC,UAAU,CAAC,MAA3B,EAAmC,CAAC,EAApC,EAAuC;MACrC,IAAI,OAAO,GAAG,UAAU,CAAC,CAAD,CAAV,CAAc,oBAAd,CAAmC,GAAnC,CAAd,CAAA;;MACA,KAAK,IAAI,CAAC,GAAC,CAAX,EAAc,CAAC,GAAC,OAAO,CAAC,MAAxB,EAAgC,CAAC,EAAjC,EAAoC;QAClC,OAAO,CAAC,CAAD,CAAP,CAAW,YAAX,CAAwB,QAAxB,EAAkC,QAAlC,CAAA,CAAA;OACD;KACF;GACF;CAVH;;;AAcA,GAAG,CAAC,IAAJ,CAAS;EACP,MAAM,EAAE,SADD;EAEP,QAAQ,EAAE,IAAA;CAFZ,CAAA,CAAA;ACjBA;AACA",
+  "file": "generated.js",
+  "sourceRoot": "",
+  "sourcesContent": [
+    "(function(){\n",
+    "// require(\"./lib/pym\");\n\n// not using jquery\nwindow.onload = function(){\n  var story = document.getElementById('story-page-body');\n  if(story){\n    var paragraphs = document.getElementById('story-page-body').getElementsByTagName('p');\n    for (var i=0; i<paragraphs.length; i++){\n      var anchors = paragraphs[i].getElementsByTagName('a');\n      for (var x=0; x<anchors.length; x++){\n        anchors[x].setAttribute('target', '_blank');\n      }\n    }\n  }\n}\n\n// animate on scroll\nAOS.init({\n  easing: 'ease-in',\n  duration: 5000\n});\n",
+    "\n}());"
+  ]
+}
