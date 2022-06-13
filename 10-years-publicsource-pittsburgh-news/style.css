@@ -1170,7 +1170,7 @@ video {
 }
 @media (max-width: 600px) {
   .grid-container {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 .grid {
