@@ -74,7 +74,7 @@
 }
 @media (max-width: 1000px) {
   #main-nav {
-    background-color: #8c1611;
+    background-color: black;
   }
 }
 #main-nav #title-logo {
@@ -201,7 +201,7 @@ div#title-logo div {
   }
 }
 .u-container h1 {
-  font-family: 'Very Vogue Display';
+  font-family: 'Very Vogue Display', 'Very Vogue Text', Georgia, 'Times New Roman', Times, serif;
   font-size: 3.2em;
   color: white;
   margin-bottom: 10px;
@@ -209,12 +209,12 @@ div#title-logo div {
 }
 @media (max-width: 1000px) {
   .u-container h1 {
-    font-size: 2.4em;
+    font-size: 2.25em;
     margin-top: 0.67em;
   }
 }
 .u-container-text h2 {
-  font-family: 'Very Vogue Text';
+  font-family: 'Very Vogue Text', 'Very Vogue Display', Georgia, 'Times New Roman', Times, serif;
   padding: 40px 0 40px 0;
   font-size: 2.4em;
   color: white;
@@ -226,7 +226,7 @@ div#title-logo div {
   }
 }
 .u-container-text h3 {
-  font-family: 'Very Vogue Display Italic';
+  font-family: 'Very Vogue Display Italic', 'Very Vogue Display', 'Very Vogue Text', Georgia, 'Times New Roman', Times, serif;
   border: 0.5px solid #BD5C5A;
   padding: 55px;
   margin: 40px 0 40px 0;
@@ -239,6 +239,7 @@ div#title-logo div {
   .u-container-text h3 {
     font-size: 2em;
     padding: 30px;
+    margin: 0.75em 0 0.75em 0;
   }
 }
 .u-container-text a {
@@ -257,10 +258,29 @@ div#title-logo div {
   }
 }
 .author {
-  font-family: 'Very Vogue Text';
+  font-family: 'Very Vogue Text', 'Very Vogue Display', Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: 20px !important;
   color: #BD5C5A;
+}
+@media (max-width: 1000px) {
+  .author {
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  .margin-bottom-mobile {
+    margin-bottom: 3em;
+  }
+}
+.desktop-no-show {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .desktop-no-show {
+    display: block;
+    margin-bottom: 2.5em;
+  }
 }
 /*
 * Skeleton V2.0.4
@@ -1126,7 +1146,7 @@ th {
 #scrolly {
   position: relative;
   padding-bottom: 25%;
-  font-family: 'Very Vogue Text';
+  font-family: 'Very Vogue Text', Georgia, 'Times New Roman', Times, serif;
 }
 @media (max-width: 1000px) {
   #scrolly {
@@ -1206,8 +1226,8 @@ th {
   }
 }
 #scrolly h1 {
-  font-family: 'Very Vogue Text Italic';
-  font-size: 6em;
+  font-family: 'Very Vogue Text', Georgia, 'Times New Roman', Times, serif;
+  font-size: 5.8em;
   color: white;
   text-align: center;
   line-height: 0.9em;
@@ -1221,12 +1241,13 @@ th {
   }
 }
 #scrolly .kilimanjaro {
-  font-family: 'Kilimanjaro Sans Slanted';
+  font-family: 'Kilimanjaro Sans', 'Mallory', sans-serif;
   font-size: 0.925em;
-  margin-left: 6px;
+  margin-left: 8px;
 }
 #scrolly .zone {
-  margin-left: -11px;
+  margin-left: -12.5px;
+  letter-spacing: -0.06em;
 }
 @media (max-width: 1000px) {
   #scrolly .zone {
@@ -2141,6 +2162,21 @@ th {
   font-family: mallory, sans-serif;
   background-color: #8c1611;
 }
+#footer p {
+  font-size: 1.6em;
+  font-family: 'Very Vogue Display Italic', 'Mallory';
+  margin-top: 4em;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+}
+@media (max-width: 1000px) {
+  #footer p {
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 #footer span {
   font-size: 1em;
   color: #ffffff;
@@ -2159,13 +2195,17 @@ th {
   text-align: center;
   display: block;
   margin: 0px auto;
-  padding: 3.5em 0 0 0;
+  padding: 1em 0 0 0;
 }
-#footer a,
-button {
+#footer button {
   margin-left: auto;
   margin-right: auto;
   background-color: black;
+}
+#footer a {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -2180,7 +2220,7 @@ body {
   padding: 0;
   margin: 0;
   touch-action: manipulation;
-  font-family: 'VeryVogueText';
+  font-family: 'Very Vogue Text', 'Very Vogue Display', Georgia, 'Times New Roman', Times, serif;
   font-size: 14px;
   line-height: 1.4;
 }
