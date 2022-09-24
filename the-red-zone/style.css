@@ -1226,7 +1226,7 @@ th {
   }
 }
 #scrolly h1 {
-  font-family: 'Very Vogue Text', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Very Vogue Display', Georgia, 'Times New Roman', Times, serif;
   font-size: 5.8em;
   color: white;
   text-align: center;
@@ -1242,11 +1242,11 @@ th {
 }
 #scrolly .kilimanjaro {
   font-family: 'Kilimanjaro Sans', 'Mallory', sans-serif;
-  font-size: 0.925em;
+  font-size: 0.91em;
   margin-left: 8px;
 }
 #scrolly .zone {
-  margin-left: -12.5px;
+  margin-left: -13px;
   letter-spacing: -0.06em;
 }
 @media (max-width: 1000px) {
