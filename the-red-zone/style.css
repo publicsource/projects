@@ -544,11 +544,11 @@ strong {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #4e83a3;
+  color: #8c1611;
   cursor: pointer;
 }
 a:hover {
-  color: black;
+  color: white;
 }
 button,
 input[type="button"],
@@ -2203,7 +2203,7 @@ th {
   background-color: black;
 }
 #footer a {
-  color: white;
+  color: white !important;
   margin-left: auto;
   margin-right: auto;
 }
