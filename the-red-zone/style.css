@@ -1227,7 +1227,7 @@ th {
 }
 #scrolly h1 {
   font-family: 'Very Vogue Display', Georgia, 'Times New Roman', Times, serif;
-  font-size: 5.8em;
+  font-size: 6.4em;
   color: white;
   text-align: center;
   line-height: 0.9em;
@@ -1235,7 +1235,7 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly h1 {
-    font-size: 2.4em;
+    font-size: 3em;
     padding: 0 3rem 0 3rem;
     margin-top: -20%;
   }
@@ -1246,7 +1246,7 @@ th {
   margin-left: 8px;
 }
 #scrolly .zone {
-  margin-left: -13px;
+  margin-left: -13.5px;
   letter-spacing: -0.06em;
 }
 @media (max-width: 1000px) {
