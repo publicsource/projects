@@ -295,7 +295,8 @@ div#title-logo div {
 }
 .byline {
   font-family: 'Druk Cond Web';
-  font-size: 1.6em;
+  font-size: 2em;
+  letter-spacing: 0.015em;
 }
 .date {
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
