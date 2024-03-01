@@ -270,6 +270,7 @@ div#title-logo div {
 }
 @media (max-width: 1000px) {
   .u-container-text {
+    font-size: 20px;
     margin-top: 1.5em;
     margin-left: 20px;
     margin-right: 20px;
@@ -500,7 +501,12 @@ div#title-logo div {
 #mc_embed_shell {
   border: 1px solid black;
   padding: 2em;
-  margin: 2em 0 2em 0;
+  margin: 1em 0 1em 0;
+}
+@media (max-width: 1000px) {
+  #mc_embed_shell {
+    margin: 2em 0 2em 0;
+  }
 }
 #mc_embed_shell img {
   max-width: 30%;
@@ -510,6 +516,11 @@ div#title-logo div {
   padding: 2em;
   margin: 2em 0 2em 0;
   font-weight: 600;
+}
+@media (max-width: 1000px) {
+  .cta-box {
+    padding: 2.5em;
+  }
 }
 .divider {
   border-top: 20px solid #1A2A35;
@@ -1400,7 +1411,11 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly {
-    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+@media (max-width: 500px) {
+  #scrolly {
     padding-bottom: 1%;
   }
 }
@@ -1414,7 +1429,7 @@ th {
   margin: 0 auto;
   position: relative;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly .step-container {
     max-width: 45em;
   }
@@ -1445,7 +1460,7 @@ th {
   opacity: 0;
   transition: height 1000ms ease-in, opacity 750ms ease-out;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly figure img {
     width: 100%;
   }
@@ -1457,13 +1472,18 @@ th {
 #scrolly .step {
   margin: 0 auto 2rem auto;
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.2em;
   text-shadow: 1px 1px black;
 }
 @media (max-width: 1000px) {
   #scrolly .step {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  #scrolly .step {
+    font-size: 17px;
   }
 }
 #scrolly .step:last-child {
@@ -1487,10 +1507,16 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly h1 {
-    font-size: 3.5em;
+    font-size: 5em;
     padding: 0 3rem 0 3rem;
-    margin-top: -25%;
+    margin-top: -10%;
     line-height: 0.1em;
+  }
+}
+@media (max-width: 500px) {
+  #scrolly h1 {
+    font-size: 3.5em;
+    margin-top: -15%;
   }
 }
 #scrolly p {
@@ -1509,8 +1535,8 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly2 {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 #scrolly2 article {
@@ -1540,7 +1566,7 @@ th {
   opacity: 0;
   transition: height 1000ms ease-in, opacity 750ms ease-out;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly2 figure img {
     width: 100%;
   }
@@ -1554,10 +1580,16 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
+  text-shadow: 1px 1px black;
 }
 @media (max-width: 1000px) {
   #scrolly2 .step {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  #scrolly2 .step {
+    font-size: 17px;
   }
 }
 #scrolly2 .step:last-child {
@@ -1580,8 +1612,8 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly3 {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 #scrolly3 article {
@@ -1610,7 +1642,7 @@ th {
   transform: translate(-50%, -50%);
   opacity: 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly3 figure img {
     width: 100%;
   }
@@ -1624,10 +1656,16 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
+  text-shadow: 1px 1px black;
 }
 @media (max-width: 1000px) {
   #scrolly3 .step {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  #scrolly3 .step {
+    font-size: 17px;
   }
 }
 #scrolly3 .step:last-child {
@@ -1651,8 +1689,8 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly4 {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 #scrolly4 article {
@@ -1687,7 +1725,7 @@ th {
     max-width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly4 figure img {
     max-width: 100%;
   }
@@ -1701,10 +1739,16 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
+  text-shadow: 1px 1px black;
 }
 @media (max-width: 1000px) {
   #scrolly4 .step {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  #scrolly4 .step {
+    font-size: 17px;
   }
 }
 #scrolly4 .step:last-child {
@@ -1722,14 +1766,20 @@ th {
 #scrolly5 {
   position: relative;
   padding-top: 8%;
-  padding-bottom: 22%;
+  padding-bottom: 15%;
   margin-top: 5em;
   font-family: garamond-premier-pro, "Times New Roman", Times, serif;
 }
 @media (max-width: 1000px) {
   #scrolly5 {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+  }
+}
+@media (max-width: 500px) {
+  #scrolly5 {
+    padding-top: 15%;
+    padding-bottom: 25%;
   }
 }
 #scrolly5 article {
@@ -1764,7 +1814,7 @@ th {
     max-width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly5 figure img {
     max-width: 100%;
   }
@@ -1778,10 +1828,16 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
+  text-shadow: 1px 1px black;
 }
 @media (max-width: 1000px) {
   #scrolly5 .step {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  #scrolly5 .step {
+    font-size: 17px;
   }
 }
 #scrolly5 .step:last-child {
@@ -1805,8 +1861,14 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly6 {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+}
+@media (max-width: 500px) {
+  #scrolly6 {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 #scrolly6 article {
@@ -1841,7 +1903,7 @@ th {
     max-width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly6 figure img {
     max-width: 100%;
   }
@@ -1855,10 +1917,16 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
+  text-shadow: 1px 1px black;
 }
 @media (max-width: 1000px) {
   #scrolly6 .step {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  #scrolly6 .step {
+    font-size: 17px;
   }
 }
 #scrolly6 .step:last-child {
@@ -1881,6 +1949,12 @@ th {
   font-family: garamond-premier-pro, "Times New Roman", Times, serif;
 }
 @media (max-width: 1000px) {
+  #scrolly7 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 500px) {
   #scrolly7 {
     padding-top: 1%;
     padding-bottom: 1%;
@@ -1918,7 +1992,7 @@ th {
     max-width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly7 figure img {
     max-width: 100%;
   }
@@ -1932,10 +2006,16 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
+  text-shadow: 1px 1px black;
 }
 @media (max-width: 1000px) {
   #scrolly7 .step {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  #scrolly7 .step {
+    font-size: 17px;
   }
 }
 #scrolly7 .step:last-child {
@@ -1958,8 +2038,14 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly8 {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+}
+@media (max-width: 500px) {
+  #scrolly8 {
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 #scrolly8 article {
@@ -1988,7 +2074,7 @@ th {
   transform: translate(-50%, -50%);
   opacity: 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly8 figure img {
     width: 100%;
   }
@@ -2002,10 +2088,16 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
+  text-shadow: 1px 1px black;
 }
 @media (max-width: 1000px) {
   #scrolly8 .step {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  #scrolly8 .step {
+    font-size: 17px;
   }
 }
 #scrolly8 .step:last-child {
@@ -2028,8 +2120,14 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly9 {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+}
+@media (max-width: 500px) {
+  #scrolly9 {
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 #scrolly9 article {
@@ -2058,7 +2156,7 @@ th {
   transform: translate(-50%, -50%);
   opacity: 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #scrolly9 figure img {
     width: 100%;
   }
@@ -2072,10 +2170,16 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
+  text-shadow: 1px 1px black;
 }
 @media (max-width: 1000px) {
   #scrolly9 .step {
     font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  #scrolly9 .step {
+    font-size: 17px;
   }
 }
 #scrolly9 .step:last-child {
