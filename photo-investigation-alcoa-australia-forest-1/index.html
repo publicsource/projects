@@ -72,13 +72,18 @@
 
   <body id="homepage">
 
+    <!-- Loading Screen -->
+    <div class="loader-container">
+      <div class="spinner"></div>
+    </div>
+
       <div id="main-nav" class="row">
   <div id="title-logo" class="item">
     <div class="logo"><a href="https://www.publicsource.org/"><img src="https://apps.publicsource.org/faith-race-place/img/logo.png" alt="logo"></a></div>
   </div>
 
   <div id="main-nav-links" class="item">
-    <span><a href="https://www.publicsource.org/donate-to-publicsource/">DONATE</a></span>
+    <span><a href="https://publicsource.fundjournalism.org/?campaign=701QO00000bNDFWYA4">DONATE</a></span>
   </div>
   <div id="nav-burger"><i class="fal fa-bars"></i></div>
 </div>
@@ -261,16 +266,16 @@
 
       	<article>
       		<div class='step' data-step='1'>
-      			<!-- <p></p> -->
+      			<p>At the reserve at the outskirts of Alcoa's mining lease, the land provides, as it has for generations of Noongar people.</p>
       		</div>
       		<div class='step' data-step='2'>
-      			<!-- <p></p> -->
+      			<p>But as the company's footprint has grown, land for hunting and fishing has been lost.</p>
       		</div>
       		<div class='step' data-step='3'>
-      			<!-- <p></p> -->
+      			<p>Elders, alongside a younger generation, continue to preserve tradition.</p>
       		</div>
       		<div class='step' data-step='4'>
-      			<p>Christopher Nannup processes kangaroo alongside his uncle, Franklin Nannup, a Noongar elder.</p>
+      			<p>Expanded mining threatens to further erode it.</p>
       		</div>
       	</article>
 
@@ -843,7 +848,7 @@
     <!-- Story text -->
     
       <div class="cta-box">
-        <em>Support investigative journalism like this. <a href="https://checkout.fundjournalism.org/memberform?org_id=publicsource&campaign=701QO0000068VJLYA2">Make a gift to PublicSource's nonprofit newsroom today</a>.</em>
+        <em>Support investigative journalism like this. <a href="https://publicsource.fundjournalism.org/?campaign=701QO00000bOGUXYA4">Make a gift to PublicSource's nonprofit newsroom today</a>.</em>
       </div>
 
     <!-- Info box -->
@@ -1167,12 +1172,16 @@
 
     <!-- Story text -->
     
-      <img class="inline-img" alt="A woman stands by a riverbank, rubbing red dirt on her hand, with trees and water in the background." src="https://www.publicsource.org/wp-content/uploads/2025/05/first-nation-woman-river.jpg" />
-      <div class="caption-inline-img">
-        <p>Cheryl Martin, a member of the First Nation Noongar people, rubs dust between her palms at the bank of the Murray River in Pinjarra, Western Australia, on March 28, 2025.</p>
       </div>
+        <div class="hero-image u-max-full-width">
+          <img alt="A woman stands by a riverbank, rubbing red dirt on her hand, with trees and water in the background." src="https://www.publicsource.org/wp-content/uploads/2025/05/first-nation-woman-river.jpg" />
+        </div>
+        <div class="caption">
+          <p>Cheryl Martin, a member of the First Nation Noongar people, rubs dust between her palms at the bank of the Murray River in Pinjarra, Western Australia, on March 28, 2025.</p>
+        </div>
+      <div class="u-container-text">
 
-    <!-- Hero image + caption -->
+    <!-- Medium image + caption -->
     
 
 
@@ -1220,7 +1229,7 @@
     <!-- Story text -->
     
       <div class="info-box">
-        <p><h4>Key dates in Noongar history</h4>45,000 BCE — First Nations people arrive on the Australian continent <br> 1829 — Britain establishes colony of Western Australia<br>1834 — A Noongar settlement is ambushed by colonizers in the Pinjarra Massacre<br>2008 — Prime Minister Kevin Rudd formally apologizes to First Nations population<br>2016 — Western Australian Parliament enacts the Noongar Recognition Act<br> 2023 — Australian voters reject the creation of a nationwide First Nations advisory body</p>
+        <p><h4>Key dates in Noongar history</h4>45,000 BCE — First Nations people <a href="https://www.unsw.edu.au/newsroom/news/2018/08/when-did-aboriginal-people-first-arrive-australia#:~:text=Analysis%20of%20maternal%20genetic%20lineages,west%20of%20modern%2Dday%20Adelaide.">arrive</a> on the Australian continent <br> 1829 — Britain establishes colony of Western Australia<br>1834 — A Noongar settlement is ambushed by colonizers in the Pinjarra Massacre<br>2008 — Prime Minister Kevin Rudd formally apologizes to First Nations population<br>2016 — Western Australian Parliament enacts the Noongar Recognition Act<br> 2023 — Australian voters reject the creation of a nationwide First Nations advisory body</p>
       </div>
 
     <!-- Video -->
@@ -1592,6 +1601,24 @@
   <a style="font-weight: 600; text-decoration: none;" href="https://www.publicsource.org/newsletter-signup/"><button>SIGN UP</button></a>
 </div>
 
+
+    <script>
+      // Loading screen logic
+      window.addEventListener('load', function() {
+          // Get the loader element
+          const loader = document.querySelector('.loader-container');
+          
+          // Hide the loader after the page has fully loaded
+          setTimeout(function() {
+              loader.classList.add('loader-hidden');
+              
+              // Remove the loader from the DOM after transition completes
+              loader.addEventListener('transitionend', function() {
+                  document.body.removeChild(loader);
+              });
+          }, 500); // Short timeout to ensure everything is rendered
+      });
+  </script>
 
     <script src="app.js" async></script>
     <script>
