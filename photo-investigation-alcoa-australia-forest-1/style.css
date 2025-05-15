@@ -23,7 +23,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #000000;
+  background-color: #0C0C0C;
   padding: 1px;
   z-index: 1000;
 }
@@ -277,6 +277,9 @@ div#title-logo div {
     margin-right: 20px;
   }
 }
+.u-container-text h4 {
+  color: #0C0C0C;
+}
 .subhed {
   text-align: center;
   padding: 1em 0 1em 0;
@@ -300,6 +303,7 @@ div#title-logo div {
   letter-spacing: 0.015em;
   margin-top: 1.5em;
   line-height: 1.2em;
+  color: #0C0C0C;
 }
 .date {
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
@@ -323,7 +327,7 @@ div#title-logo div {
   font-family: 'PT Mono', monospace;
   font-weight: 700;
   font-size: 1.2em;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed #0C0C0C;
   display: inline-block;
 }
 .u-container-text h3 {
@@ -420,7 +424,12 @@ div#title-logo div {
   }
 }
 .caption p {
-  font-size: 14.3px;
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .caption p {
+    font-size: 12px;
+  }
 }
 .caption-inline-img {
   text-align: left;
@@ -454,16 +463,16 @@ div#title-logo div {
   float: right;
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
   font-size: 0.65em;
-  color: #000000;
+  color: #0C0C0C;
   padding: 2em;
   margin: 2em;
   max-width: 350px;
-  border-left: 1px solid black;
+  border-left: 1px solid #0C0C0C;
 }
 @media (max-width: 1000px) {
   .series-bug {
     padding: 1em;
-    margin: 2em;
+    margin: 1em;
     max-width: 200px;
     font-size: 14px;
     line-height: 1.25em;
@@ -479,13 +488,12 @@ div#title-logo div {
   float: left;
   font-family: 'Mallory', Helvetica, Arial, sans-serif;
   font-size: 0.65em;
-  color: #000000;
+  color: #0C0C0C;
   margin: 2em;
   max-width: 400px;
 }
 @media (max-width: 1000px) {
   .map-bug {
-    border: 1px solid black;
     padding: 2em;
     margin: 1em 0 3em 0;
     max-width: 100%;
@@ -529,7 +537,7 @@ div#title-logo div {
   }
 }
 .inline-related-stories a {
-  color: #000000 !important;
+  color: #0C0C0C !important;
 }
 .inline-related-stories a:hover {
   color: #5271ae !important;
@@ -614,7 +622,7 @@ div#title-logo div {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #0C0C0C;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -641,7 +649,7 @@ div#title-logo div {
 .spinner:after {
   width: 80%;
   height: 80%;
-  background-color: #000000;
+  background-color: #0C0C0C;
   top: 10%;
   left: 10%;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.2);
@@ -1532,7 +1540,7 @@ th {
 @media (max-width: 1000px) {
   #scrolly {
     padding-bottom: 10%;
-    background-color: #000000;
+    background-color: #0C0C0C;
   }
 }
 @media (max-width: 500px) {
@@ -1631,7 +1639,7 @@ th {
   color: white;
   text-align: center;
   line-height: 0.01em;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px #0C0C0C;
 }
 @media (max-width: 1000px) {
   #scrolly h1 {
@@ -1663,7 +1671,7 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly2 {
-    background-color: #000000;
+    background-color: #0C0C0C;
     padding-top: 5%;
     padding-bottom: 5%;
   }
@@ -1741,7 +1749,7 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly3 {
-    background-color: #000000;
+    background-color: #0C0C0C;
     padding-top: 5%;
     padding-bottom: 5%;
   }
@@ -1786,7 +1794,7 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px #0C0C0C;
 }
 @media (max-width: 1000px) {
   #scrolly3 .step {
@@ -1803,7 +1811,7 @@ th {
 }
 #scrolly3 .step p {
   padding: 3.5rem;
-  background-color: black;
+  background-color: #0C0C0C;
 }
 @media (max-width: 1000px) {
   #scrolly3 .step p {
@@ -1818,7 +1826,7 @@ th {
 }
 @media (max-width: 1000px) {
   #scrolly4 {
-    background-color: #000000;
+    background-color: #0C0C0C;
     padding-top: 5%;
     padding-bottom: 5%;
   }
@@ -1863,7 +1871,7 @@ th {
   color: #fff;
   font-size: 22px;
   line-height: 1.2em;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px #0C0C0C;
 }
 @media (max-width: 1000px) {
   #scrolly4 .step {
@@ -1880,7 +1888,7 @@ th {
 }
 #scrolly4 .step p {
   padding: 3.5rem;
-  background-color: black;
+  background-color: #0C0C0C;
 }
 @media (max-width: 1000px) {
   #scrolly4 .step p {
