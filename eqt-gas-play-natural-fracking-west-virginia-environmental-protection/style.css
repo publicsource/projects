@@ -330,7 +330,7 @@ div#title-logo div {
   margin: 2em 0 2em 0;
 }
 .u-container-text a {
-  color: #5271ae !important;
+  color: #1277e2 !important;
   text-decoration: none;
 }
 .hero-image img {
@@ -503,14 +503,14 @@ div#title-logo div {
   color: #222222 !important;
 }
 .inline-related-stories a:hover {
-  color: #5271ae !important;
+  color: #1277e2 !important;
 }
 #mc_embed_signup {
   font-family: garamond-premier-pro, "Times New Roman", Times, serif;
   line-height: 1em;
 }
 .button {
-  background-color: #5271ae !important;
+  background-color: #1277e2 !important;
   margin: 0.5em 0 0.5em 0;
 }
 #mc_embed_shell {
@@ -834,7 +834,7 @@ input[type="submit"],
   -webkit-transition: background-color 0.15s linear, border-color 0.15s linear, color 0.15s linear, opacity 0.15s linear;
   -moz-transition: background-color 0.15s linear, border-color 0.15s linear, color 0.15s linear, opacity 0.15s linear;
   transition: background-color 0.15s linear, border-color 0.15s linear, color 0.15s linear, opacity 0.15s linear;
-  background-color: #5271ae;
+  background-color: #1277e2;
   border: none !important;
   color: #fff;
   display: inline-block;
